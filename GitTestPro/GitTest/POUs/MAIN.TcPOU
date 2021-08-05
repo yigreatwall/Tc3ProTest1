@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{60cb77d4-9ad5-4845-a91a-5fcb5ee5d0f3}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{60cb77d4-9ad5-4845-a91a-5fcb5ee5d0f3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	
+	a: INT;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[a:=a+1;
+]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
