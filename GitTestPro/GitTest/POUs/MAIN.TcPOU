@@ -5,14 +5,21 @@
 VAR
 	
 	a: INT;
+	FB_Sum1:FB_Sum;
+	num1: INT;
+	num2: INT;
+	sum1: INT;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[a:=a+1;
+FB_Sum1(in1:=num1 , in2:=num2 , sum=>sum1 );
+
 ]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
+      <LineId Id="10" Count="1" />
       <LineId Id="7" Count="0" />
     </LineIds>
   </POU>
